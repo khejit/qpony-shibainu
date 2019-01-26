@@ -14,6 +14,7 @@ import {mapState} from 'vuex';
 export default {
   mounted() {
     window.addEventListener("scroll", throttle(this.handleScroll, 150));
+    this.handleScroll();
   },
   computed: mapState(['isLoading']),
   methods: {
