@@ -7,14 +7,12 @@
 </template>
 
 <script>
-import Test from '@/components/Test';
 import Navbar from '@/components/Navbar';
 import FooterComponent from '@/components/Footer';
 
 export default {
   name: "app",
   components: {
-    Test,
     Navbar,
     FooterComponent
   }
