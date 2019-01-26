@@ -1,0 +1,35 @@
+.card {
+	overflow: hidden;
+
+	&__action {
+		transition: all 0.25s ease-in-out;
+
+		&.absolute {
+			position: absolute;
+			z-index: 10;
+			right: 10px;
+			top: 10px;
+		}
+
+		.icon {
+			transition: opacity 0.25s;
+			opacity: 0.7;
+		}
+
+		&.is-on {
+			transform: scale(1.1);
+		}
+
+		&:hover, &.is-on {
+			.icon {
+				opacity: 1;
+			}
+		}
+	}
+
+	&__image {
+		.is-loading {
+			min-height: 200px;
+		}
+	}
+}

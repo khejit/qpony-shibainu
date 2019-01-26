@@ -1,0 +1,11 @@
+.navbar {
+    &__logo {
+        // max-height: 3rem !important;
+    }
+
+	@media (min-width: $tablet) {
+		&__logo {
+			// max-height: 4.75rem !important;
+		}
+	}
+}
